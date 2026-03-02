@@ -2,6 +2,8 @@
 
 An open protocol for key-based identity, authentication, attestation, and messaging. A public key is an identity. How it's generated, stored, or managed is not the protocol's concern.
 
+https://github.com/user-attachments/assets/f3f2b4bd-cf04-4145-9b83-2055c1e0ad3c
+
 ## What It Defines
 
 IDAP specifies the interfaces for five capabilities:
