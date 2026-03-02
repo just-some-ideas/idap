@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0799A998F1FB9C947C92FEAC /* AuthApprovalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10F125AF42441C409531589 /* AuthApprovalViewModel.swift */; };
+		0C98EFBE6617A4D4155D2F46 /* MockAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0E8ED19CC1ACE98407E5E /* MockAuth.swift */; };
+		1211CA17150812ABC98710EE /* LoginCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491A75709325AD125E79854 /* LoginCodeView.swift */; };
+		1293B83114256DBF87B6B13D /* AuthProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CDD45E34BB252150CDAD68 /* AuthProviding.swift */; };
+		1594298BD84E056C2C65C469 /* CapabilityRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA06B05FB6B7F89D13690B /* CapabilityRequestViewModel.swift */; };
+		15A16C6BB4DBF27DD40BB22B /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FF647E154592744263B90 /* ContactDetailView.swift */; };
+		19391D2B59CD96289154AA4F /* OnboardingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C20E931CBBBAC87F12A83F /* OnboardingViewModelTests.swift */; };
+		1C69C9F1B4AAE668AFD0FBDE /* AuthApprovalViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F848BE660ADADE36D9BBAA61 /* AuthApprovalViewModelTests.swift */; };
+		2804CB5563B32C000B2877D7 /* IDAPIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 36660A47D29B6CE7F66E92D2 /* IDAPIdentity */; };
+		2EEF533BCB1120CE01D774C1 /* JSONRecoveryMapStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA239FD62925616751B74CCC /* JSONRecoveryMapStore.swift */; };
+		330BDB3CBF49FF4D4DA33746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E790C519540842417FC32FA /* ContentView.swift */; };
+		334A1C8F2F6EF36F83403C13 /* PersonaIdentityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C48A2A19F6A2A45BBFF1CC4 /* PersonaIdentityView.swift */; };
+		33B9D8816C7A5E85E434AA1A /* PersonaProxiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3036B9DEB06B441CAB7A1 /* PersonaProxiesView.swift */; };
+		36BCD95254E7F5DE0AFED261 /* CapabilityRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E336C5947AAE22C82394BCBD /* CapabilityRequestView.swift */; };
+		3BD28F133DD9F3A4AFBC0536 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1E1ACF945840D25A523BF /* ActivityViewModel.swift */; };
+		3C267964994B979667C4501B /* MockCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0720EF1D9CCFA5DD211DD74 /* MockCrypto.swift */; };
+		3E2BBAADE2556B8A4A8CF1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B64E727F09FA4C3ED9EB7 /* AppDelegate.swift */; };
+		3EFDB57C610DEC0B0A84431F /* IDAPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A801D4BFD4032D1B25B38 /* IDAPApp.swift */; };
+		40A64249FABB72DBCD69C691 /* KeychainProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5061847BF8EE61E1855247 /* KeychainProviding.swift */; };
+		464A076409B713581EA81471 /* IdentityStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63D73E4CB8BF81389D721C /* IdentityStoring.swift */; };
+		46B5C75AB7673AE6834489B5 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F1EDE814FB412767E85D0A /* ActivityStore.swift */; };
+		4768C9ACB219424A97A3F05C /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D5DB9D6B1361F9AC7C0C0A /* KeychainService.swift */; };
+		4D5AE39BDBD414CAA0FAAE4E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DAFD1088809B5C25CC0893 /* SettingsViewModel.swift */; };
+		4F28DCD5FE7581E7651F36E1 /* URLSessionWebSocketConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F807F0E640EE18FFDD136B /* URLSessionWebSocketConnector.swift */; };
+		52A5E8F73A34C36D404CF5DD /* MockIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C62AF0AAD95863E8803CB00 /* MockIdentity.swift */; };
+		53E82E3B1F2FE2DEA2DDB76A /* IDAPCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 57EDE7EC5603D4C819804898 /* IDAPCrypto */; };
+		54BFD06F1B2C42B258B19D07 /* PersonaSwitcherSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0972983F2EC9B38DBB59E739 /* PersonaSwitcherSheet.swift */; };
+		56D33BFB6922B69744E8CEE2 /* PersonaManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A670633EF245D22F500C46 /* PersonaManagementView.swift */; };
+		5BBFD6832B52B7BF920FB74B /* OnboardingCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA01C69EE96AED7EBA6F2D /* OnboardingCoordinatorView.swift */; };
+		5D9C0E9EE63651805544A598 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC562714C1A8146401A3A88 /* AddContactView.swift */; };
+		5E306A0BC1A868AFFDC384CC /* LoginCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33284FEFC4DF88CD58F896B /* LoginCodeViewModel.swift */; };
+		616486C3CB93966346D07573 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3A4B724AA3981585F0F27A80 /* GRDB */; };
+		626562C87F715D451808E440 /* ContactsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66620A7BF9E39ECF6CFB24B8 /* ContactsProviding.swift */; };
+		66A1F8CBBC329BEED924DC45 /* AuthTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E24E03A80BDF4925DEF319F /* AuthTabView.swift */; };
+		706204E1991DE88ADA7897DE /* PersonaViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D374BAF07AE9045D692597B3 /* PersonaViewModelTests.swift */; };
+		72C956D2EFE2635C5494198F /* OnboardingCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C4B412D8FCC615DB125C /* OnboardingCompleteView.swift */; };
+		787C347AD87AA990C21F1776 /* ContactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBFEB9E482CC26E20BF50E /* ContactsViewModelTests.swift */; };
+		79E227270123D1C8056F147D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554DA18B99C8780FCB3A7F7 /* SettingsView.swift */; };
+		7C26D64A1A1816391EEC21ED /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CBD029048DDF61AF4A547A /* LockView.swift */; };
+		85193E230409A9493B9AB65F /* CryptoProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D29485B952F5C4CED993D /* CryptoProviding.swift */; };
+		85BD9A4749C017EFE011EE18 /* PersonaProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A203A366FEC216D7602FD0C /* PersonaProfileView.swift */; };
+		8CC934A24FEC9D5B655737CE /* AuthApprovalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ED6F65C3EECB54CC82C91C /* AuthApprovalView.swift */; };
+		92CE91CD7E8CFBD20143D270 /* PersonaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C7E24DAD91C63E3BD77E8 /* PersonaDetailView.swift */; };
+		93185492BF6492E77A4E72A8 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59C7ED5D15C58E32EC985B /* ContactsViewModel.swift */; };
+		9778AD37D9D8CB8959114584 /* IDAPAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A02E782BEA2F1DEDB66D4656 /* IDAPAuth */; };
+		9D5900FA574F2AAC2EB6FD47 /* PersonaCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC48D20B525D9FC61FA06CB /* PersonaCreationViewModel.swift */; };
+		9EBE791CF2C506E2B0361A7D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00654602B3044BCA72EEA1FD /* WelcomeView.swift */; };
+		A1B038FF0071F8E403CA9A24 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79034540ADFD8D101531E164 /* ContactsView.swift */; };
+		A1D5F7F148E75FE8BF71119F /* RecoveryPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDE9FDC7DBD670B91ED07B /* RecoveryPhraseView.swift */; };
+		A2310F6A0E957C45683BED1D /* IDAPIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = E6C91F69ADB14BD4C5EF68A4 /* IDAPIdentity */; };
+		A9A376CE540F64462D1A3695 /* IDAPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640005982D3784C7217641EC /* IDAPSession.swift */; };
+		B28141502B8C05A9C3C9FA1C /* IDAPRecovery in Frameworks */ = {isa = PBXBuildFile; productRef = 4497E0234A72F795B7FDB6B2 /* IDAPRecovery */; };
+		B49C705CA7683B859E45B0A4 /* PersonaDangerZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBF016BA7091EC179CA8C2 /* PersonaDangerZoneView.swift */; };
+		B5DE43E7B7BA5846C1C1DA17 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83664397F4907D9925E42A93 /* ActivityView.swift */; };
+		B6E9A8F13CA08FD7D36D0E48 /* PersonaDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40771012B1A2C90C70C962 /* PersonaDetailViewModel.swift */; };
+		B7BF9480A661FB7245BABBB9 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA514C910A2D05728D3C2D /* OnboardingViewModel.swift */; };
+		BDEE15DA7E32D1E2D4BEBE35 /* Conformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ABFD52CE79A3B059B69B00 /* Conformances.swift */; };
+		C6A8470A4094CA558E9E6F55 /* MockKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C9FABC8E91B67708B712 /* MockKeychain.swift */; };
+		CEA867CBC30F96009AF9BDBA /* IDAPContacts in Frameworks */ = {isa = PBXBuildFile; productRef = EC20BECF06897F3B7C060C30 /* IDAPContacts */; };
+		D23634971A5E1386FDD2ED64 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8235E55427EB2A8D9D010671 /* DatabaseManager.swift */; };
+		D41882BD499B8B8DCBF87648 /* IDAPContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 162303A5335140B543AA7FC2 /* IDAPContacts */; };
+		D42298B3A7B7EFBFFC278F03 /* IDAPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750FEB8C522D7B20A6AC8717 /* IDAPUITests.swift */; };
+		DFECFDEF3445926C513D1DAB /* IDAPCrypto in Frameworks */ = {isa = PBXBuildFile; productRef = 7BE95153016B5E52374B724C /* IDAPCrypto */; };
+		DFFCA5658795646D13802E4D /* PersonaBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1A5520291B304A38E21823 /* PersonaBarView.swift */; };
+		E6163A153B6FFCC174E26F76 /* IDAPAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B9E9E2A7B7EDBEFD98FC6C08 /* IDAPAuth */; };
+		EA9B466E298CD4817328D06C /* CreatePersonaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D19322384FEF168730ED73 /* CreatePersonaView.swift */; };
+		EC238ED51BFB6230BBF30B9F /* IDAPRecovery in Frameworks */ = {isa = PBXBuildFile; productRef = D4BA739617282749DE361CBD /* IDAPRecovery */; };
+		F0223C4C97EF483470B5C594 /* ProxyRegistrationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1BCAA417506638961DDD07 /* ProxyRegistrationSheet.swift */; };
+		F31388C7F5E4CF97CA2E65C6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E93711ECD785FE9A34303 /* RootView.swift */; };
+		F6868C764A8EB417D36B545B /* IDAPCryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02763FBE31B0B3C50A818250 /* IDAPCryptoService.swift */; };
+		F6F18AC198B87F222F9B95D4 /* RecoveryProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B36D2D7E90167AFAED8D51E /* RecoveryProviding.swift */; };
+		F74AB6D32AA9CD9835C164AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C725FDCE8EA68234A81D245E /* Assets.xcassets */; };
+		FA14E30B64B76E428E7B9006 /* MockContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BC8C49B5E32CF5D03DFE7 /* MockContacts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E196561DCF33C9FBE7C8F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D12FBF7215DB83CA6B4BE69C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB42A88C672DC726FB8DB245;
+			remoteInfo = IDAP;
+		};
+		DDFEF44863C7BFAEC2066CD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D12FBF7215DB83CA6B4BE69C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB42A88C672DC726FB8DB245;
+			remoteInfo = IDAP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00654602B3044BCA72EEA1FD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		01CDD45E34BB252150CDAD68 /* AuthProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviding.swift; sourceTree = "<group>"; };
+		02763FBE31B0B3C50A818250 /* IDAPCryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAPCryptoService.swift; sourceTree = "<group>"; };
+		0708A861FF6878BCBB5B176D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0972983F2EC9B38DBB59E739 /* PersonaSwitcherSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaSwitcherSheet.swift; sourceTree = "<group>"; };
+		0A80C4B412D8FCC615DB125C /* OnboardingCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCompleteView.swift; sourceTree = "<group>"; };
+		0B5D29485B952F5C4CED993D /* CryptoProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoProviding.swift; sourceTree = "<group>"; };
+		1491A75709325AD125E79854 /* LoginCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCodeView.swift; sourceTree = "<group>"; };
+		1D5061847BF8EE61E1855247 /* KeychainProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainProviding.swift; sourceTree = "<group>"; };
+		2B7FF647E154592744263B90 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		2E790C519540842417FC32FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BCA01C69EE96AED7EBA6F2D /* OnboardingCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinatorView.swift; sourceTree = "<group>"; };
+		3C63D73E4CB8BF81389D721C /* IdentityStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityStoring.swift; sourceTree = "<group>"; };
+		4AA1E1ACF945840D25A523BF /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		4DEF0EFC783914AD27D23BB1 /* idap-identity */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "idap-identity"; path = "../packages/idap-identity"; sourceTree = SOURCE_ROOT; };
+		4E24E03A80BDF4925DEF319F /* AuthTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTabView.swift; sourceTree = "<group>"; };
+		57EDE9FDC7DBD670B91ED07B /* RecoveryPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhraseView.swift; sourceTree = "<group>"; };
+		5B36D2D7E90167AFAED8D51E /* RecoveryProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryProviding.swift; sourceTree = "<group>"; };
+		5C2318A2002F68754B670CF3 /* idap-recovery */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "idap-recovery"; path = "../packages/idap-recovery"; sourceTree = SOURCE_ROOT; };
+		5C62AF0AAD95863E8803CB00 /* MockIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockIdentity.swift; sourceTree = "<group>"; };
+		61ED6F65C3EECB54CC82C91C /* AuthApprovalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApprovalView.swift; sourceTree = "<group>"; };
+		640005982D3784C7217641EC /* IDAPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAPSession.swift; sourceTree = "<group>"; };
+		66620A7BF9E39ECF6CFB24B8 /* ContactsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsProviding.swift; sourceTree = "<group>"; };
+		66CBD029048DDF61AF4A547A /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		69C20E931CBBBAC87F12A83F /* OnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTests.swift; sourceTree = "<group>"; };
+		6A203A366FEC216D7602FD0C /* PersonaProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaProfileView.swift; sourceTree = "<group>"; };
+		6BC0E8ED19CC1ACE98407E5E /* MockAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuth.swift; sourceTree = "<group>"; };
+		6CF3036B9DEB06B441CAB7A1 /* PersonaProxiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaProxiesView.swift; sourceTree = "<group>"; };
+		6D59C7ED5D15C58E32EC985B /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		750FEB8C522D7B20A6AC8717 /* IDAPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAPUITests.swift; sourceTree = "<group>"; };
+		75210D1BF70721DE0EC39A00 /* IDAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79034540ADFD8D101531E164 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		7C48A2A19F6A2A45BBFF1CC4 /* PersonaIdentityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaIdentityView.swift; sourceTree = "<group>"; };
+		81F1EDE814FB412767E85D0A /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
+		8235E55427EB2A8D9D010671 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		83664397F4907D9925E42A93 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		86F0E1C1EF85BAD527A08179 /* idap-auth */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "idap-auth"; path = "../packages/idap-auth"; sourceTree = SOURCE_ROOT; };
+		8A8C7E24DAD91C63E3BD77E8 /* PersonaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDetailView.swift; sourceTree = "<group>"; };
+		9231B1A12DB8580506818FF0 /* IDAP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IDAP.entitlements; sourceTree = "<group>"; };
+		9DC30C74944F45B12F88DB5B /* idap-crypto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "idap-crypto"; path = "../packages/idap-crypto"; sourceTree = SOURCE_ROOT; };
+		A8A670633EF245D22F500C46 /* PersonaManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaManagementView.swift; sourceTree = "<group>"; };
+		A9F807F0E640EE18FFDD136B /* URLSessionWebSocketConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionWebSocketConnector.swift; sourceTree = "<group>"; };
+		AA0B64E727F09FA4C3ED9EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFFA514C910A2D05728D3C2D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B6CBFEB9E482CC26E20BF50E /* ContactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModelTests.swift; sourceTree = "<group>"; };
+		BA1A5520291B304A38E21823 /* PersonaBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaBarView.swift; sourceTree = "<group>"; };
+		BE3A801D4BFD4032D1B25B38 /* IDAPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAPApp.swift; sourceTree = "<group>"; };
+		BF0BC8C49B5E32CF5D03DFE7 /* MockContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContacts.swift; sourceTree = "<group>"; };
+		C33284FEFC4DF88CD58F896B /* LoginCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCodeViewModel.swift; sourceTree = "<group>"; };
+		C5CBF016BA7091EC179CA8C2 /* PersonaDangerZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDangerZoneView.swift; sourceTree = "<group>"; };
+		C725FDCE8EA68234A81D245E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8D5DB9D6B1361F9AC7C0C0A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		CA239FD62925616751B74CCC /* JSONRecoveryMapStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRecoveryMapStore.swift; sourceTree = "<group>"; };
+		CC40771012B1A2C90C70C962 /* PersonaDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaDetailViewModel.swift; sourceTree = "<group>"; };
+		CFC48D20B525D9FC61FA06CB /* PersonaCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaCreationViewModel.swift; sourceTree = "<group>"; };
+		D0DA06B05FB6B7F89D13690B /* CapabilityRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapabilityRequestViewModel.swift; sourceTree = "<group>"; };
+		D310C9FABC8E91B67708B712 /* MockKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeychain.swift; sourceTree = "<group>"; };
+		D374BAF07AE9045D692597B3 /* PersonaViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaViewModelTests.swift; sourceTree = "<group>"; };
+		D554DA18B99C8780FCB3A7F7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D56E93711ECD785FE9A34303 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		D96B46C9989707DCB54B908B /* IDAPTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IDAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1BCAA417506638961DDD07 /* ProxyRegistrationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyRegistrationSheet.swift; sourceTree = "<group>"; };
+		E336C5947AAE22C82394BCBD /* CapabilityRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapabilityRequestView.swift; sourceTree = "<group>"; };
+		E4ABFD52CE79A3B059B69B00 /* Conformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conformances.swift; sourceTree = "<group>"; };
+		E8DAFD1088809B5C25CC0893 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F0720EF1D9CCFA5DD211DD74 /* MockCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCrypto.swift; sourceTree = "<group>"; };
+		F10F125AF42441C409531589 /* AuthApprovalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApprovalViewModel.swift; sourceTree = "<group>"; };
+		F7D19322384FEF168730ED73 /* CreatePersonaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonaView.swift; sourceTree = "<group>"; };
+		F820028E4C4EAA87EFB708C7 /* IDAPUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = IDAPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F848BE660ADADE36D9BBAA61 /* AuthApprovalViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApprovalViewModelTests.swift; sourceTree = "<group>"; };
+		FBE445C510F72B1E924927F8 /* idap-contacts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "idap-contacts"; path = "../packages/idap-contacts"; sourceTree = SOURCE_ROOT; };
+		FDC562714C1A8146401A3A88 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21D3E85DB01BE7564E25AD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E82E3B1F2FE2DEA2DDB76A /* IDAPCrypto in Frameworks */,
+				2804CB5563B32C000B2877D7 /* IDAPIdentity in Frameworks */,
+				9778AD37D9D8CB8959114584 /* IDAPAuth in Frameworks */,
+				CEA867CBC30F96009AF9BDBA /* IDAPContacts in Frameworks */,
+				B28141502B8C05A9C3C9FA1C /* IDAPRecovery in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1E39BFA6BE7BF24540446F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFECFDEF3445926C513D1DAB /* IDAPCrypto in Frameworks */,
+				A2310F6A0E957C45683BED1D /* IDAPIdentity in Frameworks */,
+				E6163A153B6FFCC174E26F76 /* IDAPAuth in Frameworks */,
+				D41882BD499B8B8DCBF87648 /* IDAPContacts in Frameworks */,
+				EC238ED51BFB6230BBF30B9F /* IDAPRecovery in Frameworks */,
+				616486C3CB93966346D07573 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D3A35F325AB575E77C3135 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				83664397F4907D9925E42A93 /* ActivityView.swift */,
+				4AA1E1ACF945840D25A523BF /* ActivityViewModel.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		112ED700F31FD7B6AB6E04D4 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				FDC562714C1A8146401A3A88 /* AddContactView.swift */,
+				E336C5947AAE22C82394BCBD /* CapabilityRequestView.swift */,
+				D0DA06B05FB6B7F89D13690B /* CapabilityRequestViewModel.swift */,
+				2B7FF647E154592744263B90 /* ContactDetailView.swift */,
+				79034540ADFD8D101531E164 /* ContactsView.swift */,
+				6D59C7ED5D15C58E32EC985B /* ContactsViewModel.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		1387268D65195522B220D3EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C725FDCE8EA68234A81D245E /* Assets.xcassets */,
+				0708A861FF6878BCBB5B176D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22B0322E82FFBA0BAE5AFFA9 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				86F0E1C1EF85BAD527A08179 /* idap-auth */,
+				FBE445C510F72B1E924927F8 /* idap-contacts */,
+				9DC30C74944F45B12F88DB5B /* idap-crypto */,
+				4DEF0EFC783914AD27D23BB1 /* idap-identity */,
+				5C2318A2002F68754B670CF3 /* idap-recovery */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		32F1FAE20E0B35108489B6B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2E790C519540842417FC32FA /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		34F7CDBF19F8CBCD6D2E5B1B /* IDAPTests */ = {
+			isa = PBXGroup;
+			children = (
+				F848BE660ADADE36D9BBAA61 /* AuthApprovalViewModelTests.swift */,
+				B6CBFEB9E482CC26E20BF50E /* ContactsViewModelTests.swift */,
+				69C20E931CBBBAC87F12A83F /* OnboardingViewModelTests.swift */,
+				D374BAF07AE9045D692597B3 /* PersonaViewModelTests.swift */,
+				36D6BE8F5D277148BD3B71C2 /* Mocks */,
+			);
+			path = IDAPTests;
+			sourceTree = "<group>";
+		};
+		36D6BE8F5D277148BD3B71C2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0E8ED19CC1ACE98407E5E /* MockAuth.swift */,
+				BF0BC8C49B5E32CF5D03DFE7 /* MockContacts.swift */,
+				F0720EF1D9CCFA5DD211DD74 /* MockCrypto.swift */,
+				5C62AF0AAD95863E8803CB00 /* MockIdentity.swift */,
+				D310C9FABC8E91B67708B712 /* MockKeychain.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4A954847134FB8C4918BC342 /* Persona */ = {
+			isa = PBXGroup;
+			children = (
+				F7D19322384FEF168730ED73 /* CreatePersonaView.swift */,
+				BA1A5520291B304A38E21823 /* PersonaBarView.swift */,
+				CFC48D20B525D9FC61FA06CB /* PersonaCreationViewModel.swift */,
+				C5CBF016BA7091EC179CA8C2 /* PersonaDangerZoneView.swift */,
+				8A8C7E24DAD91C63E3BD77E8 /* PersonaDetailView.swift */,
+				CC40771012B1A2C90C70C962 /* PersonaDetailViewModel.swift */,
+				7C48A2A19F6A2A45BBFF1CC4 /* PersonaIdentityView.swift */,
+				A8A670633EF245D22F500C46 /* PersonaManagementView.swift */,
+				6A203A366FEC216D7602FD0C /* PersonaProfileView.swift */,
+				6CF3036B9DEB06B441CAB7A1 /* PersonaProxiesView.swift */,
+				0972983F2EC9B38DBB59E739 /* PersonaSwitcherSheet.swift */,
+				DE1BCAA417506638961DDD07 /* ProxyRegistrationSheet.swift */,
+			);
+			path = Persona;
+			sourceTree = "<group>";
+		};
+		51E5C10625F40DE34453EF38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75210D1BF70721DE0EC39A00 /* IDAP.app */,
+				D96B46C9989707DCB54B908B /* IDAPTests.xctest */,
+				F820028E4C4EAA87EFB708C7 /* IDAPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		601D45686E4B15512DC53DEA = {
+			isa = PBXGroup;
+			children = (
+				BE900159A86DC29482C66CFF /* IDAP */,
+				34F7CDBF19F8CBCD6D2E5B1B /* IDAPTests */,
+				C40122DFCC7B411E9A81BDF4 /* IDAPUITests */,
+				22B0322E82FFBA0BAE5AFFA9 /* Packages */,
+				51E5C10625F40DE34453EF38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76A33E245C5F391A73786B44 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0A80C4B412D8FCC615DB125C /* OnboardingCompleteView.swift */,
+				3BCA01C69EE96AED7EBA6F2D /* OnboardingCoordinatorView.swift */,
+				AFFA514C910A2D05728D3C2D /* OnboardingViewModel.swift */,
+				57EDE9FDC7DBD670B91ED07B /* RecoveryPhraseView.swift */,
+				00654602B3044BCA72EEA1FD /* WelcomeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		797A4B86EDBAB2F84BAF8A64 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D554DA18B99C8780FCB3A7F7 /* SettingsView.swift */,
+				E8DAFD1088809B5C25CC0893 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B933A65187808F153E6446DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81F1EDE814FB412767E85D0A /* ActivityStore.swift */,
+				8235E55427EB2A8D9D010671 /* DatabaseManager.swift */,
+				02763FBE31B0B3C50A818250 /* IDAPCryptoService.swift */,
+				CA239FD62925616751B74CCC /* JSONRecoveryMapStore.swift */,
+				C8D5DB9D6B1361F9AC7C0C0A /* KeychainService.swift */,
+				A9F807F0E640EE18FFDD136B /* URLSessionWebSocketConnector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE900159A86DC29482C66CFF /* IDAP */ = {
+			isa = PBXGroup;
+			children = (
+				AA0B64E727F09FA4C3ED9EB7 /* AppDelegate.swift */,
+				9231B1A12DB8580506818FF0 /* IDAP.entitlements */,
+				BE3A801D4BFD4032D1B25B38 /* IDAPApp.swift */,
+				640005982D3784C7217641EC /* IDAPSession.swift */,
+				66CBD029048DDF61AF4A547A /* LockView.swift */,
+				D56E93711ECD785FE9A34303 /* RootView.swift */,
+				04D3A35F325AB575E77C3135 /* Activity */,
+				D4D5591152C5E2226925F261 /* Auth */,
+				112ED700F31FD7B6AB6E04D4 /* Contacts */,
+				32F1FAE20E0B35108489B6B2 /* Main */,
+				76A33E245C5F391A73786B44 /* Onboarding */,
+				4A954847134FB8C4918BC342 /* Persona */,
+				E2C5E160252B58DE689A1623 /* Protocols */,
+				1387268D65195522B220D3EA /* Resources */,
+				B933A65187808F153E6446DD /* Services */,
+				797A4B86EDBAB2F84BAF8A64 /* Settings */,
+			);
+			path = IDAP;
+			sourceTree = "<group>";
+		};
+		C40122DFCC7B411E9A81BDF4 /* IDAPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				750FEB8C522D7B20A6AC8717 /* IDAPUITests.swift */,
+			);
+			path = IDAPUITests;
+			sourceTree = "<group>";
+		};
+		D4D5591152C5E2226925F261 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				61ED6F65C3EECB54CC82C91C /* AuthApprovalView.swift */,
+				F10F125AF42441C409531589 /* AuthApprovalViewModel.swift */,
+				4E24E03A80BDF4925DEF319F /* AuthTabView.swift */,
+				1491A75709325AD125E79854 /* LoginCodeView.swift */,
+				C33284FEFC4DF88CD58F896B /* LoginCodeViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E2C5E160252B58DE689A1623 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				01CDD45E34BB252150CDAD68 /* AuthProviding.swift */,
+				E4ABFD52CE79A3B059B69B00 /* Conformances.swift */,
+				66620A7BF9E39ECF6CFB24B8 /* ContactsProviding.swift */,
+				0B5D29485B952F5C4CED993D /* CryptoProviding.swift */,
+				3C63D73E4CB8BF81389D721C /* IdentityStoring.swift */,
+				1D5061847BF8EE61E1855247 /* KeychainProviding.swift */,
+				5B36D2D7E90167AFAED8D51E /* RecoveryProviding.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB42A88C672DC726FB8DB245 /* IDAP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEDA331011C721C92B9EC659 /* Build configuration list for PBXNativeTarget "IDAP" */;
+			buildPhases = (
+				EF16ECB82AC20FD01160997F /* Sources */,
+				3ABB3051367DF1350FFB1ABB /* Resources */,
+				CD1E39BFA6BE7BF24540446F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDAP;
+			packageProductDependencies = (
+				7BE95153016B5E52374B724C /* IDAPCrypto */,
+				E6C91F69ADB14BD4C5EF68A4 /* IDAPIdentity */,
+				B9E9E2A7B7EDBEFD98FC6C08 /* IDAPAuth */,
+				162303A5335140B543AA7FC2 /* IDAPContacts */,
+				D4BA739617282749DE361CBD /* IDAPRecovery */,
+				3A4B724AA3981585F0F27A80 /* GRDB */,
+			);
+			productName = IDAP;
+			productReference = 75210D1BF70721DE0EC39A00 /* IDAP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D08A85449A5BB50442A4AA56 /* IDAPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C2BC304768AD67444E3536 /* Build configuration list for PBXNativeTarget "IDAPUITests" */;
+			buildPhases = (
+				E1D99A30BEA80BEA0D299B85 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4084A0BE65DF360FC8B5A365 /* PBXTargetDependency */,
+			);
+			name = IDAPUITests;
+			packageProductDependencies = (
+			);
+			productName = IDAPUITests;
+			productReference = F820028E4C4EAA87EFB708C7 /* IDAPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E6D2EF0447C76B64A70B0DAA /* IDAPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BFA84515A1F72C0867DE48C /* Build configuration list for PBXNativeTarget "IDAPTests" */;
+			buildPhases = (
+				D624F8DD5097F37274E83C05 /* Sources */,
+				21D3E85DB01BE7564E25AD4E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DD4B76918F0CB4FA3576A53 /* PBXTargetDependency */,
+			);
+			name = IDAPTests;
+			packageProductDependencies = (
+				57EDE7EC5603D4C819804898 /* IDAPCrypto */,
+				36660A47D29B6CE7F66E92D2 /* IDAPIdentity */,
+				A02E782BEA2F1DEDB66D4656 /* IDAPAuth */,
+				EC20BECF06897F3B7C060C30 /* IDAPContacts */,
+				4497E0234A72F795B7FDB6B2 /* IDAPRecovery */,
+			);
+			productName = IDAPTests;
+			productReference = D96B46C9989707DCB54B908B /* IDAPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D12FBF7215DB83CA6B4BE69C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D08A85449A5BB50442A4AA56 = {
+						TestTargetID = AB42A88C672DC726FB8DB245;
+					};
+				};
+			};
+			buildConfigurationList = 3AA89D74E910C56EA50FD9CB /* Build configuration list for PBXProject "IDAP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 601D45686E4B15512DC53DEA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04EEE3E0910AD5744DBA35DB /* XCRemoteSwiftPackageReference "GRDB" */,
+				EAF602C28302C6CF9507043C /* XCLocalSwiftPackageReference "../packages/idap-auth" */,
+				12090F336B5FA25175C016C7 /* XCLocalSwiftPackageReference "../packages/idap-contacts" */,
+				F6D7DAE1E21210C98855A284 /* XCLocalSwiftPackageReference "../packages/idap-crypto" */,
+				852D7E5FE83CB9921A69BDEE /* XCLocalSwiftPackageReference "../packages/idap-identity" */,
+				B65914B342633CF3FE149F62 /* XCLocalSwiftPackageReference "../packages/idap-recovery" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB42A88C672DC726FB8DB245 /* IDAP */,
+				E6D2EF0447C76B64A70B0DAA /* IDAPTests */,
+				D08A85449A5BB50442A4AA56 /* IDAPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ABB3051367DF1350FFB1ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74AB6D32AA9CD9835C164AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D624F8DD5097F37274E83C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C69C9F1B4AAE668AFD0FBDE /* AuthApprovalViewModelTests.swift in Sources */,
+				787C347AD87AA990C21F1776 /* ContactsViewModelTests.swift in Sources */,
+				0C98EFBE6617A4D4155D2F46 /* MockAuth.swift in Sources */,
+				FA14E30B64B76E428E7B9006 /* MockContacts.swift in Sources */,
+				3C267964994B979667C4501B /* MockCrypto.swift in Sources */,
+				52A5E8F73A34C36D404CF5DD /* MockIdentity.swift in Sources */,
+				C6A8470A4094CA558E9E6F55 /* MockKeychain.swift in Sources */,
+				19391D2B59CD96289154AA4F /* OnboardingViewModelTests.swift in Sources */,
+				706204E1991DE88ADA7897DE /* PersonaViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D99A30BEA80BEA0D299B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42298B3A7B7EFBFFC278F03 /* IDAPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF16ECB82AC20FD01160997F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B5C75AB7673AE6834489B5 /* ActivityStore.swift in Sources */,
+				B5DE43E7B7BA5846C1C1DA17 /* ActivityView.swift in Sources */,
+				3BD28F133DD9F3A4AFBC0536 /* ActivityViewModel.swift in Sources */,
+				5D9C0E9EE63651805544A598 /* AddContactView.swift in Sources */,
+				3E2BBAADE2556B8A4A8CF1A5 /* AppDelegate.swift in Sources */,
+				8CC934A24FEC9D5B655737CE /* AuthApprovalView.swift in Sources */,
+				0799A998F1FB9C947C92FEAC /* AuthApprovalViewModel.swift in Sources */,
+				1293B83114256DBF87B6B13D /* AuthProviding.swift in Sources */,
+				66A1F8CBBC329BEED924DC45 /* AuthTabView.swift in Sources */,
+				36BCD95254E7F5DE0AFED261 /* CapabilityRequestView.swift in Sources */,
+				1594298BD84E056C2C65C469 /* CapabilityRequestViewModel.swift in Sources */,
+				BDEE15DA7E32D1E2D4BEBE35 /* Conformances.swift in Sources */,
+				15A16C6BB4DBF27DD40BB22B /* ContactDetailView.swift in Sources */,
+				626562C87F715D451808E440 /* ContactsProviding.swift in Sources */,
+				A1B038FF0071F8E403CA9A24 /* ContactsView.swift in Sources */,
+				93185492BF6492E77A4E72A8 /* ContactsViewModel.swift in Sources */,
+				330BDB3CBF49FF4D4DA33746 /* ContentView.swift in Sources */,
+				EA9B466E298CD4817328D06C /* CreatePersonaView.swift in Sources */,
+				85193E230409A9493B9AB65F /* CryptoProviding.swift in Sources */,
+				D23634971A5E1386FDD2ED64 /* DatabaseManager.swift in Sources */,
+				3EFDB57C610DEC0B0A84431F /* IDAPApp.swift in Sources */,
+				F6868C764A8EB417D36B545B /* IDAPCryptoService.swift in Sources */,
+				A9A376CE540F64462D1A3695 /* IDAPSession.swift in Sources */,
+				464A076409B713581EA81471 /* IdentityStoring.swift in Sources */,
+				2EEF533BCB1120CE01D774C1 /* JSONRecoveryMapStore.swift in Sources */,
+				40A64249FABB72DBCD69C691 /* KeychainProviding.swift in Sources */,
+				4768C9ACB219424A97A3F05C /* KeychainService.swift in Sources */,
+				7C26D64A1A1816391EEC21ED /* LockView.swift in Sources */,
+				1211CA17150812ABC98710EE /* LoginCodeView.swift in Sources */,
+				5E306A0BC1A868AFFDC384CC /* LoginCodeViewModel.swift in Sources */,
+				72C956D2EFE2635C5494198F /* OnboardingCompleteView.swift in Sources */,
+				5BBFD6832B52B7BF920FB74B /* OnboardingCoordinatorView.swift in Sources */,
+				B7BF9480A661FB7245BABBB9 /* OnboardingViewModel.swift in Sources */,
+				DFFCA5658795646D13802E4D /* PersonaBarView.swift in Sources */,
+				9D5900FA574F2AAC2EB6FD47 /* PersonaCreationViewModel.swift in Sources */,
+				B49C705CA7683B859E45B0A4 /* PersonaDangerZoneView.swift in Sources */,
+				92CE91CD7E8CFBD20143D270 /* PersonaDetailView.swift in Sources */,
+				B6E9A8F13CA08FD7D36D0E48 /* PersonaDetailViewModel.swift in Sources */,
+				334A1C8F2F6EF36F83403C13 /* PersonaIdentityView.swift in Sources */,
+				56D33BFB6922B69744E8CEE2 /* PersonaManagementView.swift in Sources */,
+				85BD9A4749C017EFE011EE18 /* PersonaProfileView.swift in Sources */,
+				33B9D8816C7A5E85E434AA1A /* PersonaProxiesView.swift in Sources */,
+				54BFD06F1B2C42B258B19D07 /* PersonaSwitcherSheet.swift in Sources */,
+				F0223C4C97EF483470B5C594 /* ProxyRegistrationSheet.swift in Sources */,
+				A1D5F7F148E75FE8BF71119F /* RecoveryPhraseView.swift in Sources */,
+				F6F18AC198B87F222F9B95D4 /* RecoveryProviding.swift in Sources */,
+				F31388C7F5E4CF97CA2E65C6 /* RootView.swift in Sources */,
+				79E227270123D1C8056F147D /* SettingsView.swift in Sources */,
+				4D5AE39BDBD414CAA0FAAE4E /* SettingsViewModel.swift in Sources */,
+				4F28DCD5FE7581E7651F36E1 /* URLSessionWebSocketConnector.swift in Sources */,
+				9EBE791CF2C506E2B0361A7D /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DD4B76918F0CB4FA3576A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB42A88C672DC726FB8DB245 /* IDAP */;
+			targetProxy = 5E196561DCF33C9FBE7C8F34 /* PBXContainerItemProxy */;
+		};
+		4084A0BE65DF360FC8B5A365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB42A88C672DC726FB8DB245 /* IDAP */;
+			targetProxy = DDFEF44863C7BFAEC2066CD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		483E1A2FD033FB5B3620D008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IDAP/IDAP.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IDAP/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.idap;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E673C4E21E394FBF2392959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		65C02A608758428F935561DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.idap.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IDAP;
+			};
+			name = Release;
+		};
+		77AE48E700D5296F7DD3BFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.idap.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IDAP.app/IDAP";
+			};
+			name = Debug;
+		};
+		7B3769DA11DA0C3B30920B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.idap.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IDAP;
+			};
+			name = Debug;
+		};
+		B0B1B417308E912804CCE6EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.idap.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IDAP.app/IDAP";
+			};
+			name = Release;
+		};
+		C09ECE2F9AFA6452B8247008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FD2B7E523EBC0AC70D1DD7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IDAP/IDAP.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = IDAP/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.idap;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA89D74E910C56EA50FD9CB /* Build configuration list for PBXProject "IDAP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09ECE2F9AFA6452B8247008 /* Debug */,
+				4E673C4E21E394FBF2392959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8BFA84515A1F72C0867DE48C /* Build configuration list for PBXNativeTarget "IDAPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AE48E700D5296F7DD3BFD5 /* Debug */,
+				B0B1B417308E912804CCE6EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D4C2BC304768AD67444E3536 /* Build configuration list for PBXNativeTarget "IDAPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B3769DA11DA0C3B30920B72 /* Debug */,
+				65C02A608758428F935561DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DEDA331011C721C92B9EC659 /* Build configuration list for PBXNativeTarget "IDAP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2B7E523EBC0AC70D1DD7FE /* Debug */,
+				483E1A2FD033FB5B3620D008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		12090F336B5FA25175C016C7 /* XCLocalSwiftPackageReference "../packages/idap-contacts" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../packages/idap-contacts";
+		};
+		852D7E5FE83CB9921A69BDEE /* XCLocalSwiftPackageReference "../packages/idap-identity" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../packages/idap-identity";
+		};
+		B65914B342633CF3FE149F62 /* XCLocalSwiftPackageReference "../packages/idap-recovery" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../packages/idap-recovery";
+		};
+		EAF602C28302C6CF9507043C /* XCLocalSwiftPackageReference "../packages/idap-auth" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../packages/idap-auth";
+		};
+		F6D7DAE1E21210C98855A284 /* XCLocalSwiftPackageReference "../packages/idap-crypto" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../packages/idap-crypto";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04EEE3E0910AD5744DBA35DB /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		162303A5335140B543AA7FC2 /* IDAPContacts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPContacts;
+		};
+		36660A47D29B6CE7F66E92D2 /* IDAPIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPIdentity;
+		};
+		3A4B724AA3981585F0F27A80 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04EEE3E0910AD5744DBA35DB /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		4497E0234A72F795B7FDB6B2 /* IDAPRecovery */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPRecovery;
+		};
+		57EDE7EC5603D4C819804898 /* IDAPCrypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPCrypto;
+		};
+		7BE95153016B5E52374B724C /* IDAPCrypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPCrypto;
+		};
+		A02E782BEA2F1DEDB66D4656 /* IDAPAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPAuth;
+		};
+		B9E9E2A7B7EDBEFD98FC6C08 /* IDAPAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPAuth;
+		};
+		D4BA739617282749DE361CBD /* IDAPRecovery */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPRecovery;
+		};
+		E6C91F69ADB14BD4C5EF68A4 /* IDAPIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPIdentity;
+		};
+		EC20BECF06897F3B7C060C30 /* IDAPContacts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDAPContacts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D12FBF7215DB83CA6B4BE69C /* Project object */;
+}

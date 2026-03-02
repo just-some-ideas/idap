@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Go
+# Note: go.sum should be committed (dependency integrity verification)
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Compiled binaries
+demo/demo
+demo/idap-demo
+proxy/idap-proxy
+
+# .NET Aspire
+aspire/**/bin/
+aspire/**/obj/
+aspire/**/.vs/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.obsidian
